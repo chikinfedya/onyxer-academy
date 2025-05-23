@@ -1,0 +1,23 @@
+@import url(reset.css);
+
+body {
+    color:burlywood;
+}
+
+h1,
+p,
+a {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.6;
+}
+
+.holder p:first-of-type {
+    color: green;
+}
+
+.list a[href^="https"] {
+  color: red;
+  text-decoration: underline;
+}
+
