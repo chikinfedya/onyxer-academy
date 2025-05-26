@@ -12,11 +12,11 @@ a {
     line-height: 1.6;
 }
 
-.holder p:first-of-type {
+ul + p {
     color: green;
 }
 
-.list a[href^="https"] {
+[href^="https"] {
   color: red;
   text-decoration: underline;
 }
