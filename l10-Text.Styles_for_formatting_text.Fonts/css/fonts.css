@@ -1,0 +1,10 @@
+/* ================= Causten ================ */
+
+@font-face {
+    font-family: "Causten";
+    src: url(../fonts/Causten-Medium.woff2) format("woff2"),
+         url(../fonts/Causten-Medium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
