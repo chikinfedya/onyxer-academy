@@ -1,0 +1,57 @@
+@import url(reset.css);
+
+
+
+
+
+
+.wrapper {
+    margin: 50px;
+}
+
+
+
+.holder {
+    display: flex;
+    width: 300px;
+    border: 5px solid black;
+    border-radius: 25px 25px 0 0;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.item {
+    padding: 20px 0;
+}
+
+.item:nth-child(1) {
+    order: 1;
+    background-color: red;
+    width: 50%;
+    border-radius: 20px 0 0 0;
+}
+
+.item:nth-child(2) {
+    order: 4;
+    background-color: cornflowerblue;
+    width: 33.33%;
+}
+
+.item:nth-child(3) {
+    order: 3;
+    background-color: blueviolet;
+    width: 33.33%;
+}
+
+.item:nth-child(4) {
+    order: 5;
+    background-color: green;
+    width: 33.33%;
+}
+
+.item:nth-child(5) {
+    order: 2;
+    background-color: coral;
+    width: 50%;
+    border-radius: 0 20px 0 0;
+}
