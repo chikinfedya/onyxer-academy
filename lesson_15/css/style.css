@@ -16,6 +16,113 @@ a {
     color: #212121;
 }
 
+p {
+    font-family: "Roboto";
+    color: #757575;
+}
+
+[class*="__container"] {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* ========== header ========== */
+
 header {
     border: 1px solid #ececec ;
+}
+
+.header__container {
+    justify-content: space-between;
+}
+
+.header__content {
+    width: 585px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 3%;
+}
+
+.header__logo span {
+    color: #2196F3;
+}
+
+.header__nav {
+    width: 290px;
+    display: flex;
+}
+
+.header__menu {
+    width: 290px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list a {
+  position: relative;
+  display: inline-block;
+}
+
+.header__list a:hover {
+    color: #2196F3;
+}
+
+.header__list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #2196F3;
+  bottom: -32px;
+  opacity: 0;
+  border-radius: 2px;
+}
+
+.header__list a:hover::after {
+  opacity: 1;
+}
+
+.header__contakts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.header__contakts a {
+    display: inline-block;
+}
+
+.--mail img {
+    width: 16px;
+    margin: 2px 5px;
+}
+
+.--phone img {
+    width: 10px;
+    margin-right: 5px;
+}
+
+.--mail img:hover {
+    content: url(../img/header/envelope_hover.svg);
+}
+
+.header__text {
+    display: inline-block;
+}
+
+.header__link p:hover {
+    color: #2196F3;
 }
