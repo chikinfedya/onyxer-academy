@@ -12,6 +12,7 @@
 a {
     font-family: "Roboto";
     font-weight: 500;
+    font-size: 16px;
     letter-spacing: 2%;
     color: #212121;
 }
@@ -24,7 +25,6 @@ p {
 [class*="__container"] {
     width: 1170px;
     margin: 0 auto;
-    display: flex;
 }
 
 /* ========== header ========== */
@@ -34,22 +34,26 @@ header {
 }
 
 .header__container {
-    justify-content: space-between;
+    gap: 309px;
+    display: flex;
 }
 
 .header__content {
-    width: 585px;
+    gap: 90px;
     height: 80px;
     display: flex;
-    justify-content: space-between;
 }
 
 .header__logo {
     display: flex;
     align-items: center;
+}
+
+.header__logo a {
+    font-size: 26px;
     font-family: "Raleway";
     font-weight: 700;
-    font-size: 26px;
+    line-height: auto;
     letter-spacing: 3%;
 }
 
@@ -58,12 +62,11 @@ header {
 }
 
 .header__nav {
-    width: 290px;
     display: flex;
 }
 
 .header__menu {
-    width: 290px;
+    gap: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,8 +77,10 @@ header {
   display: inline-block;
 }
 
-.header__list a:hover {
+.header__list a:hover,
+.header__link:hover {
     color: #2196F3;
+    transition: color 0.2s;
 }
 
 .header__list a::after {
@@ -95,7 +100,7 @@ header {
 }
 
 .header__contacts {
-    width: 350px;
+    gap: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -105,10 +110,6 @@ header {
     display: inline-flex;
     align-items: center;
     color: #757575;
-}
-
-.header__link:hover {
-    color: #2196F3;
 }
 
 .header__icon-mail {
@@ -144,3 +145,7 @@ header {
 .header__link:hover .header__icon-phone {
   filter: brightness(0) saturate(100%) invert(48%) sepia(98%) saturate(2423%) hue-rotate(178deg) brightness(98%) contrast(102%);
 }
+
+/* ========== main ========== */
+
+.
