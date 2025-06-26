@@ -94,35 +94,53 @@ header {
   opacity: 1;
 }
 
-.header__contakts {
+.header__contacts {
+    width: 350px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 350px;
 }
 
-.header__contakts a {
-    display: inline-block;
+.header__link {
+    display: inline-flex;
+    align-items: center;
+    color: #757575;
 }
 
-.--mail img {
-    width: 16px;
-    margin: 2px 5px;
-}
-
-.--phone img {
-    width: 10px;
-    margin-right: 5px;
-}
-
-.--mail img:hover {
-    content: url(../img/header/envelope_hover.svg);
-}
-
-.header__text {
-    display: inline-block;
-}
-
-.header__link p:hover {
+.header__link:hover {
     color: #2196F3;
+}
+
+.header__icon-mail {
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    margin-right: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.header__icon-mail {
+  background-image: url("../img/header/envelope.svg");
+}
+.header__link:hover .header__icon-mail {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(98%) saturate(2423%) hue-rotate(178deg) brightness(98%) contrast(102%);
+}
+
+.header__icon-phone {
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    margin-right: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.header__icon-phone {
+  background-image: url("../img/header/phone.svg");
+}
+.header__link:hover .header__icon-phone {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(98%) saturate(2423%) hue-rotate(178deg) brightness(98%) contrast(102%);
 }
