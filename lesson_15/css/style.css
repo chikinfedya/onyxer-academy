@@ -30,7 +30,7 @@ p {
 /* ========== header ========== */
 
 header {
-    border: 1px solid #ececec ;
+    border-bottom: 1px solid #ececec ;
 }
 
 .header__container {
@@ -147,5 +147,51 @@ header {
 }
 
 /* ========== main ========== */
+/* ---------- hero ---------- */
 
-.
+.hero {
+    background-image: url("../img/main/hero/hero.jpg");
+    height: 600px;
+    position: relative;
+    text-align: center;
+}
+
+.hero .hero__container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(47, 48, 54, 0.4);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero__title {
+    width: 550px;
+    font-family: "Roboto";
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.hero__button {
+    width: 200px;
+    height: 50px;
+    background-color: #2196F3;
+    padding: 10px 24px;
+    border-radius: 4px;}
